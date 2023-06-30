@@ -1,0 +1,21 @@
+(include "./container.yuck")
+
+(defvar searchField "")
+
+(defwidget search []
+  (box
+    :class "search"
+    :space-evenly false
+    (input
+      :focusable true
+      :class "searchbox"
+      :value "Search with DuckDuckGo"
+      :onchange "./scripts/search.sh {}"
+      ) 
+    (button
+      :width 40
+      :onclick "./scripts/searchddg.sh"
+      "󰍉"
+      )
+    )
+  )

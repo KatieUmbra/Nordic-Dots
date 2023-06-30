@@ -1,0 +1,18 @@
+(include "./container.yuck")
+
+(defpoll internet :interval "5s" 
+  :initial "1" 
+  "./scripts/internet.sh"
+  )
+
+(defwidget sysinfo []
+  (box
+    :class "sysinfo_c"
+    "${100 - round((EWW_DISK["/"].free / EWW_DISK["/"].total) * 100, 0)}% 󱛟"
+    "${EWW_TEMPS.AMDGPU_EDGE}° 󰍛"
+    "${round(EWW_RAM.used_mem_perc, 0)}% "
+    (label
+      :text {internet == "0" ? "󰖩" : "󰖪"}
+      )
+    )
+  )

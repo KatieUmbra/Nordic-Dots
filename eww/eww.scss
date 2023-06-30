@@ -1,0 +1,175 @@
+// nord vars
+$pn1: #2e3440;
+$pn2: #3b4252;
+$pn3: #434c5e;
+$pn4: #4c566a;
+
+$ss1: #d8dee9;
+$ss2: #e5e9f0;
+$ss3: #eceff4;
+
+// my vars
+$dbr: 10px;
+$dfs: 0px -2.5px rgba(0, 0, 0, 0.25) inset;
+
+* {
+	font-family: "Work Sans", "Cousine Nerd Font";
+	border-color: transparent;
+}
+
+.bar, .power {
+	background-color: $pn1;
+	box-shadow: $dfs; 
+}
+
+.power {
+	border-radius: $dbr;
+}
+
+box {
+	background-color: transparent;
+	color: $ss3;
+}
+
+button {
+	box-shadow: 0px 0px transparent;
+}
+
+.frame { 
+	button {
+		background-color: $pn2;
+		border-radius: $dbr;
+		margin: 5px 15px;
+		padding: 0px 7.5px 0px 10px;
+		box-shadow: $dfs; 
+		&:hover {
+			background-color: $pn3;
+			box-shadow: $dfs;
+		}
+	}
+}
+
+.pm-box {
+
+	padding: 5px 5px;
+	button {
+		background-color: $pn2;
+		margin: 2.5px 2.5px;
+		box-shadow: $dfs;
+		&:hover {
+			background-color: $pn3;
+		}
+	}
+}
+
+.container {
+	margin: 5px 15px 5px 0px;
+	background-color: $pn2;
+	border-radius: $dbr;
+	box-shadow: $dfs;
+	button {
+		font-family: "Work Sans";
+		box-shadow: 0px 0px transparent; 
+		background-color: transparent;
+		margin: 0px 1px;
+		padding: 0px 10.5px 0px 7.5px;
+		font-weight: bold;
+		&:hover {
+			background-color: $pn3;
+			box-shadow: $dfs;
+		}
+	}
+}
+
+.frame {
+	background-color: transparent;
+}
+
+.volume, .media-revealer {
+	background-color: $pn2;
+	margin: 5px 15px;
+	padding: 0px 17.5px 0px 14.5px;
+	border-radius: $dbr;
+	box-shadow: $dfs;
+	&:hover {
+		background-color: $pn3;
+	}
+}
+
+.volume-expander {
+	margin: 0px 10px 0px 0px;
+}
+
+.sysinfo_c {
+	background-color: $pn2;
+	margin: 5px 15px;
+	margin-left: 0px;
+	padding: 10px;
+	padding-left: 15px;
+	border-radius: $dbr;
+	box-shadow: $dfs;
+	* {
+		margin: 0px 5px;
+	}
+}
+
+.search {
+	background-color: $pn2;
+	border-radius: $dbr;
+	box-shadow: $dfs;
+	margin: 5px;
+	padding: 2.5px;
+	.searchbox {
+		color: $ss3;
+		background-color: $pn3;
+		margin: 2.5px;
+		border-radius: $dbr;
+		box-shadow: $dfs;
+	}
+	button {
+		margin: 0px;
+		padding-left: 1px;
+		padding-right: 2px;
+		font-size: x-large;
+	}
+}
+
+.media button {
+	margin: 5px 1px;
+	padding-right: 10px;
+	font-size: x-large;
+}
+
+.media-revealer {
+	margin: 5px;
+	padding: 0px;
+	revealer box {
+		margin: 10px 5px;
+		label {
+			margin: 0px 5px;
+		}
+	}
+}
+
+.title {
+	font-weight: bold;
+}
+
+.media-icon {
+	padding: 5px 19.5px 5px 14.5px;
+}
+
+.calendar {
+	background-color: transparent;
+}
+
+.calendar-root {
+	background-color: $pn1;
+	padding: 20px;
+	border-radius: $dbr;
+	box-shadow: $dfs;
+	calendar {
+		background-color: $pn1;
+		border-radius: $dbr;	
+	}
+}

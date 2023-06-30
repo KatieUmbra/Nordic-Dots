@@ -1,0 +1,11 @@
+(include "./frames.yuck")
+(include "./container.yuck")
+
+(defwidget power []
+  (container
+    (button
+      :onclick "${EWW_CMD} open --toggle power"
+      ""
+      )
+    )
+  )

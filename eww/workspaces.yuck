@@ -1,0 +1,45 @@
+(include "./container.yuck")
+(include "./frames.yuck")
+
+(deflisten desktop :initial "0" "xprop -spy -root _NET_CURRENT_DESKTOP")
+
+(defwidget workspaces []
+  (container
+    (button :onclick "wmctrl -s 0"
+            :active true
+            {desktop == "_NET_CURRENT_DESKTOP(CARDINAL) = 0" ? "" : ""}
+      )
+    (button :onclick "wmctrl -s 1"
+            :active true
+            {desktop == "_NET_CURRENT_DESKTOP(CARDINAL) = 1" ? "" : ""}
+      )
+    (button :onclick "wmctrl -s 2"
+            :active true
+            {desktop == "_NET_CURRENT_DESKTOP(CARDINAL) = 2" ? "" : ""}
+      )
+    (button :onclick "wmctrl -s 3"
+            :active true
+            {desktop == "_NET_CURRENT_DESKTOP(CARDINAL) = 3" ? "" : ""}
+      )
+    (button :onclick "wmctrl -s 4"
+            :active true
+            {desktop == "_NET_CURRENT_DESKTOP(CARDINAL) = 4" ? "" : ""}
+      )
+    (button :onclick "wmctrl -s 5"
+            :active true
+            {desktop == "_NET_CURRENT_DESKTOP(CARDINAL) = 5" ? "" : ""}
+      )
+    (button :onclick "wmctrl -s 6"
+            :active true
+            {desktop == "_NET_CURRENT_DESKTOP(CARDINAL) = 6" ? "" : ""}
+      )
+    (button :onclick "wmctrl -s 7"
+            :active true
+            {desktop == "_NET_CURRENT_DESKTOP(CARDINAL) = 7" ? "" : ""}
+      )
+    (button :onclick "wmctrl -s 8"
+            :active true
+            {desktop == "_NET_CURRENT_DESKTOP(CARDINAL) = 8" ? "" : ""}
+      )
+    )
+  )
